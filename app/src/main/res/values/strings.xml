@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Slot Machine</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lblActifs">"Your assets: "</string>
+    <string name="valeurActif" translatable="false"></string>
+    <string name="lbl_5_dollars" translatable="false">5 $</string>
+    <string name="lbl_2_dollars" translatable="false">2 $</string>
+    <string name="lbl_one_dollar" translatable="false">1 $</string>
+    <string name="play_btn_lbl">Play</string>
+    <string name="daredevilTxt">Dare</string>
+    <string name="win_message">You won 100 dollars!</string>
+    <string name="add_one_hundre_txt">To add 100 $</string>
+    <string name="enter_code_txt">Enter your secret code</string>
+    <string name="nouv_soldeRes">Assets:</string>
+    <string name="miseRes">"bet: "</string>
+    <string name="gainRes">", gain: "</string>
+    <string name="perteRes">", loss: "</string>
+    <string name="noOfGames">"Game No: "</string>
+    <string name="refreshItem">Refresh</string>
+    <string name="statsItem">Stats</string>
+    <string name="wisToast">You won: </string>
+    <string name="rienRes">No stats available for the moment</string>
+    <string name="modeGame">Game mode:</string>
+    <string name="casseCou"> Dare</string>
+    <string name="normal"> Default</string>
+
+</resources>

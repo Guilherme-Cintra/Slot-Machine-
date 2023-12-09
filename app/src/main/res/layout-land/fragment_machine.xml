@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/machine_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="?attr/colorPrimary"-->
+    <!--        android:minHeight="?attr/actionBarSize"-->
+    <!--        android:theme="?attr/actionBarTheme"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:menu="@menu/menu"-->
+    <!--        app:title="@string/app_name"-->
+    <!--        app:titleTextColor="@color/white" />-->
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button">
+
+        <RadioButton
+            android:id="@+id/btn_one_dollar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_one_dollar" />
+
+        <RadioButton
+            android:id="@+id/btn_two_dollars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_2_dollars" />
+
+        <RadioButton
+            android:id="@+id/btn_five_dollars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_5_dollars" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/actifsLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lblActifs"
+        android:textSize="@dimen/medium_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/actifCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/valeurActif"
+        android:textSize="@dimen/medium_size"
+        app:layout_constraintBottom_toBottomOf="@+id/actifsLbl"
+        app:layout_constraintStart_toEndOf="@+id/actifsLbl" />
+
+    <ImageView
+        android:id="@+id/slot1"
+        android:layout_width="109dp"
+        android:layout_height="120dp"
+        android:src="@drawable/bird"
+        app:layout_constraintBottom_toBottomOf="@+id/slot2"
+        app:layout_constraintEnd_toStartOf="@+id/slot2"
+        app:layout_constraintTop_toBottomOf="@+id/actifsLbl" />
+
+    <ImageView
+        android:id="@+id/slot2"
+        android:layout_width="109dp"
+        android:layout_height="120dp"
+        android:src="@drawable/bird"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actifsLbl" />
+
+    <ImageView
+        android:id="@+id/slot3"
+        android:layout_width="109dp"
+        android:layout_height="120dp"
+        android:src="@drawable/bird"
+        app:layout_constraintStart_toEndOf="@+id/slot2"
+        app:layout_constraintTop_toTopOf="@+id/slot2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/color_goldenrod"
+        android:text="@string/play_btn_lbl"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slot3"
+        app:layout_constraintTop_toTopOf="@+id/slot3" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/daredevilTxt"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/add_one_hundred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_one_hundre_txt"
+        app:layout_constraintBottom_toTopOf="@+id/enter_code"
+        app:layout_constraintStart_toStartOf="@+id/slot1" />
+
+    <TextView
+        android:id="@+id/enter_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_code_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/add_one_hundred" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/enter_code"
+        app:layout_constraintStart_toEndOf="@+id/enter_code" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/refreshBtn"-->
+    <!--        android:layout_width="24dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:src="@drawable/baseline_refresh_24"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

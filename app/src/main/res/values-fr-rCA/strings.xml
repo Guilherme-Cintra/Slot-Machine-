@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Machine à sous</string>
+    <string name="hello_blank_fragment">Bonjour fragment blanc</string>
+    <string name="lblActifs">Vos actifs </string>
+    <string name="refreshItem">rafraîchir</string>
+    <string name="statsItem">statistiques</string>
+    <string name="play_btn_lbl">Jouer</string>
+    <string name="daredevilTxt">Casse-cou</string>
+    <string name="win_message">Vous avez gagné 100 dollars!</string>
+    <string name="add_one_hundre_txt">Pour ajouter 100 $</string>
+    <string name="enter_code_txt">Entrez votre code secret</string>
+    <string name="nouv_soldeRes">Actifs:</string>
+    <string name="miseRes">Mise:</string>
+    <string name="gainRes">, gain:</string>
+    <string name="perteRes">, perte:</string>
+    <string name="noOfGames">"Partie no: "</string>
+    <string name="wisToast">Vous avez gagné: </string>
+    <string name="rienRes">Aucune statistique disponible à l’heure actuelle</string>
+    <string name="modeGame">Mode de jeu:</string>
+    <string name="casseCou"> Casse cou</string>
+    <string name="normal"> Normal</string>
+</resources>
